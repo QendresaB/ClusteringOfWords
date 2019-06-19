@@ -12,28 +12,29 @@ Our next step was using elbow to find the most suitable number of clusters that 
 Firstly we checked elbow with a range of 1 to 10 clusters. But after checking the graph it seemed like the suitable value for the number of clusters was bigger so we continued by trying the range 1 - 15 then 1-25. The last one resulted to 10 clusters but for a more preferable result you can check a different range like 1-50.
 We gave this number as a parameter to K-means so it gave us the result of 10 clusters. We tested different parameters in K-means and decided to analyze the results (2 of them given below).
 
-Cluster 0:  just  new  people  breaking  like  obama  don  black  hillary  white
-Cluster 1:  cnn  jaketapper  cnnpolitics  brianstelter  ananavarro  andersoncooper  cnnsitroom  cnni  theleadcnn  ac
-Cluster 2:  trump  president  donald  breaking  anti  just  supporters  video  obama  look
-Cluster 3:  police  wounded  shootings  shooting  officer  chicago  killed  suspect  dead  shot
-Cluster 4:  county  tax  gun  control  san  reform  diego  cook  cuts  sheriff
-Cluster 5:  children  play  games  hashtag  game  don  pay  black  parents  mother
-Cluster 6:  man  shot  police  killed  charged  shooting  old  year  woman  death
-Cluster 7:  rt  realdonaldtrump  day  chicago  year  time  video  make  woman  san
-Cluster 8:  says  nfl  trump  anthem  players  player  breaking  kaepernick  stand  protesters
-Cluster 9:  world  series  cubs  war  just  cup  trump  people  like  women
+<p>
+<br> Cluster 0:  just  new  people  breaking  like  obama  don  black  hillary  white
+<br>Cluster 1:  cnn  jaketapper  cnnpolitics  brianstelter  ananavarro  andersoncooper  cnnsitroom  cnni  theleadcnn  ac
+<br>Cluster 2:  trump  president  donald  breaking  anti  just  supporters  video  obama  look
+<br>Cluster 3:  police  wounded  shootings  shooting  officer  chicago  killed  suspect  dead  shot
+<br>Cluster 4:  county  tax  gun  control  san  reform  diego  cook  cuts  sheriff
+<br>Cluster 5:  children  play  games  hashtag  game  don  pay  black  parents  mother
+<br>Cluster 6:  man  shot  police  killed  charged  shooting  old  year  woman  death
+<br>Cluster 7:  rt  realdonaldtrump  day  chicago  year  time  video  make  woman  san
+<br>Cluster 8:  says  nfl  trump  anthem  players  player  breaking  kaepernick  stand  protesters
+<br>Cluster 9:  world  series  cubs  war  just  cup  trump  people  like  women
+</p>
 
-
-Cluster 0:  just  new  breaking  like  cnn  hillary  don  hedgebz  year  old
-Cluster 1:  people  rt  police  black  realdonaldtrump  day  time  video  white  woman
-Cluster 2:  chicago  school  high  police  area  shot  shootings  shooting  wounded  students
-Cluster 3:  america  great  make  dare  click  patriots  save  join  trump  fight
-Cluster 4:  says  trump  latest  obama  hillary  president  police  clinton  white  new
-Cluster 5:  make  know  don  people  need  things  let  want  like  sure
-Cluster 6:  killed  wounded  crash  shootings  man  shooting  police  woman  south  shot
-Cluster 7:  man  shot  police  charged  shooting  old  death  year  arrested  fatally
-Cluster 8:  trump  president  donald  breaking  anti  just  supporters  video  look  clinton
-Cluster 9:  obama  trump  president  michelle  barack  admin  just  breaking  administration  clinton
+<br>Cluster 0:  just  new  breaking  like  cnn  hillary  don  hedgebz  year  old
+<br>Cluster 1:  people  rt  police  black  realdonaldtrump  day  time  video  white  woman
+<br>Cluster 2:  chicago  school  high  police  area  shot  shootings  shooting  wounded  students
+<br>Cluster 3:  america  great  make  dare  click  patriots  save  join  trump  fight
+<br>Cluster 4:  says  trump  latest  obama  hillary  president  police  clinton  white  new
+<br>Cluster 5:  make  know  don  people  need  things  let  want  like  sure
+<br>Cluster 6:  killed  wounded  crash  shootings  man  shooting  police  woman  south  shot
+<br>Cluster 7:  man  shot  police  charged  shooting  old  death  year  arrested  fatally
+<br>Cluster 8:  trump  president  donald  breaking  anti  just  supporters  video  look  clinton
+<br>Cluster 9:  obama  trump  president  michelle  barack  admin  just  breaking  administration  clinton
 
 
 The clusters seemed to contain their own story mostly revolving to political issues and tragedies. Some of the tweets seemed to talk about shootings stories which happened in Chicago. 
@@ -43,10 +44,10 @@ In the political side, the tweets were mostly revolving to different political f
 
 At the end of the code we took into consideration checking if tweets were being clustered correctly. 
 
-print("in which cluster does this post takes part:")
-Y = vectorizier.transform(["Im voting for Donald Trump"])
-prediction = model.predict(Y)
-print("In cluster number" + str(prediction))
+<br>print("in which cluster does this post takes part:")
+<br>Y = vectorizier.transform(["Im voting for Donald Trump"])
+<br>prediction = model.predict(Y)
+<br>print("In cluster number" + str(prediction))
 
 This part of the code predicted in which cluster the post given would take part. In the second example of the clusterings above it resulted to the 8 cluster which seemed as a good choice because among all the clusters this one seem to be more related to our post.
 
